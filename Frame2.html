@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #87CEEB, #FFFFFF);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgb(8, 8, 8);
+            width: 90%;
+            max-width: 400px;
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        input[type="email"], input[type="password"] {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .forgot-password {
+            display: block;
+            text-align: right;
+            margin-bottom: 20px;
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .forgot-password:hover {
+            text-decoration: underline;
+        }
+        .login-btn {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .login-btn:hover {
+            background-color: #0056b3;
+        }
+        .social-login {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+        .social-login img {
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+        }
+        .login-link {
+            color: #FF0000;
+            text-decoration: none;
+        }
+        .login-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sign In</h1>
+        <form>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <a href="#" class="forgot-password">Forgot password?</a>
+
+            <a href="/Frame5.html">
+                <button type="button" class="login-btn">Login</button>    
+            </a>
+
+
+        </form>
+        <div class="social-login">
+            <img src="https://cdn-icons-png.flaticon.com/512/3046/3046120.png" alt="TikTok">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+            <img src="https://cdn-icons-png.flaticon.com/512/281/281764.png"alt="Google">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+        </div>
+        <p>Don't have an account? <a href="/frame1.html" class="login-link">Sign Up here</a></p>
+    </div>
+</body>
+</html>

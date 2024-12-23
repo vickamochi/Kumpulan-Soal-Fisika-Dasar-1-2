@@ -1,0 +1,163 @@
+<html>
+<head>
+    <title>PhysiScope</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #cce0ff, #99c2ff);
+            color: #333;
+        }
+        .container {
+            padding: 20px;
+            text-align: center;
+            padding-bottom: 80px;
+        }
+        .header {
+            background-color: #3399ff;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .section-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .question {
+            background-color: #e6f2ff;
+            padding: 10px;
+            border-radius: 20px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .question-text {
+            background-color: #cc99ff;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .option {
+            background-color: #e6f2ff;
+            padding: 10px;
+            border-radius: 20px;
+            margin-bottom: 10px;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            background-color: #f2f2f2;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            border-top: 1px solid #ccc;
+        }
+        .navbar a {
+            color: #666;
+            text-decoration: none;
+            text-align: center;
+            font-size: 14px;
+        }
+        .navbar a i {
+            display: block;
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+        .top-icons {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 20px;
+        }
+        .top-icons i {
+            font-size: 20px;
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-icons">
+        <a href="/Frame8.html">
+            <i class="fas fa-arrow-left"></i>
+        </a>
+        
+        <div class="icons">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-bell"></i>
+        </div>
+    </div>
+    <div class="container">
+        <div class="header">
+            <h1>PhysiScope</h1>
+            <p>Menyediakan soal-soal fisika dasar untuk latihan.</p>
+        </div>
+        <div class="section-title">LISTRIK</div>
+        <div class="question">Soal 1</div>
+        <div class="question-text">
+            Sebuah resistor R dihubungkan dengan tegangan V. Besar arus listrik yang mengalir melalui resistor tersebut adalah:
+        </div>
+        <div onclick="jawaban_salah()" class="option">V-R</div>
+        <div onclick="jawaban_salah()" class="option">V+R</div>
+        <div onclick="jawaban_benar()" class="option">V/R</div>
+        <div onclick="jawaban_salah()" class="option">R/V</div>
+
+        <div class="question">Soal 2</div>
+        <div class="question-text">
+            Hukum Coulomb menyatakan bahwa gaya listrik antara dua muatan qı dan q2 dipengaruhi oleh:
+        </div>
+        <div onclick="jawaban_benar()" class="option">Nilai q1 dan q2 serta jarak r</div>
+        <div onclick="jawaban_salah()" class="option">Jarak antara dua muatan saja</div>
+        <div onclick="jawaban_salah()" class="option">Nilai q1+q2q</div>
+        <div onclick="jawaban_salah()" class="option">Nilai q1 saja</div>
+
+        <div class="question">Soal 3</div>
+        <div class="question-text">
+            Hambatan total dari dua resistor R1 dan R2 yang dihubungkan seri adalah:
+        </div>
+        <div onclick="jawaban_salah()" class="option">R1xR2</div>
+        <div onclick="jawaban_salah()" class="option">R1-R2</div>
+        <div onclick="jawaban_salah()" class="option">R1/R2</div>
+        <div onclick="jawaban_benar()" class="option">R1+R2</div>
+
+        <div class="question">Soal 4</div>
+        <div class="question-text">
+            Muatan listrik q dipindahkan sejauh d dalam medan listrik E. Usaha yang dilakukan oleh medan listrik adalah:
+        </div>
+        <div onclick="jawaban_salah()" class="option">qE/d</div>
+        <div onclick="jawaban_benar()" class="option">qEd</div>
+        <div onclick="jawaban_salah()" class="option">q/dE</div>
+        <div onclick="jawaban_salah()" class="option">qEa</div>
+
+        <div class="question">Soal 5</div>
+        <div class="question-text">
+            Energi potensial listrik dari dua muatan titik q1 dan q2 yang dipisahkan sejauh r dinyatakan sebagai:
+        </div>
+        <div onclick="jawaban_salah()" class="option">q1q2r/k</div>
+        <div onclick="jawaban_salah()" class="option">q1q2/kr</div>
+        <div onclick="jawaban_benar()" class="option">kq1q2/r</div>
+        <div onclick="jawaban_salah()" class="option">kq1/q2r</div>
+    </div>
+
+    <div class="navbar">
+        <a href="/Frame5.html"><i class="fas fa-home"></i>Home</a>
+        <a href="/Frame10.html"><i class="fas fa-book"></i>Library</a>
+        <a href="/Frame9.html"><i class="fas fa-heart"></i>Favorite</a>
+        <a href="/Frame6.html"><i class="fas fa-user"></i>Profile</a>
+    </div>
+
+    <script>
+        function jawaban_benar() {
+            alert("Selamat Jawaban Anda Benar");
+        }
+
+        function jawaban_salah() {
+            alert("Yahh Salah Coba Lagi YAAAA!!!");
+        }
+    </script>
+</body>
+</html>

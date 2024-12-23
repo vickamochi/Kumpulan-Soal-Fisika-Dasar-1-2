@@ -1,0 +1,164 @@
+<html>
+<head>
+    <title>PhysiScope</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #cce0ff, #99c2ff);
+            color: #333;
+        }
+        .container {
+            padding: 20px;
+            text-align: center;
+            padding-bottom: 80px;
+        }
+        .header {
+            background-color: #3399ff;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .section-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .question {
+            background-color: #e6f2ff;
+            padding: 10px;
+            border-radius: 20px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .question-text {
+            background-color: #cc99ff;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .option {
+            background-color: #e6f2ff;
+            padding: 10px;
+            border-radius: 20px;
+            margin-bottom: 10px;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            background-color: #f2f2f2;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            border-top: 1px solid #ccc;
+        }
+        .navbar a {
+            color: #666;
+            text-decoration: none;
+            text-align: center;
+            font-size: 14px;
+        }
+        .navbar a i {
+            display: block;
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+        .top-icons {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+        .top-icons i {
+            font-size: 20px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-icons">
+        <a href="/Frame8.html">
+            <i class="fas fa-arrow-left"></i>
+        </a>
+        
+        <div class="icons">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-bell"></i>
+        </div>
+    </div>
+    <div class="container">
+        <div class="header">
+            <h1>PhysiScope</h1>
+            <p>Menyediakan soal-soal fisika dasar untuk latihan</p>
+        </div>
+        <div class="section-title">MAGNET</div>
+        <div class="question">Soal 1</div>
+        <div class="question-text">
+          Sebuah kawat lurus panjang membawa arus listrik sebesar 1. Arah medan magnet yang dihasilkan di sekitar kawat dapat ditentukan menggunakan aturan:
+        </div>
+        <div onclick="jawaban_salah()" class="option">Tangan kiri</div>
+        <div onclick="jawaban_benar()" class="option">Tangan kanan</div>
+        <div onclick="jawaban_salah()" class="option">Ampere</div>
+        <div onclick="jawaban_salah()" class="option">Gauss</div>
+
+        <div class="question">Soal 2</div>
+        <div class="question-text">
+          Magnet batang memiliki kutub utara dan kutub selatan. Jika dua kutub yang sama didekatkan, maka akan terjadi:
+        </div>
+        <div onclick="jawaban_salah()" class="option">Tarikan</div>
+        <div onclick="jawaban_salah()" class="option">Tidak ada gaya yang bekerja</div>
+        <div onclick="jawaban_salah()" class="option">Magnet menjadi netral</div>
+        <div onclick="jawaban_benar()" class="option">Tolakan</div>
+
+        <div class="question">Soal 3</div>
+        <div class="question-text">
+          Kuat medan magnet B pada pusat sebuah loop kawat melingkar dengan arus I dinyatakan sebagai:
+        </div>
+        <div onclick="jawaban_salah()" class="option">μοι/πr</div>
+        <div onclick="jawaban_benar()" class="option">μοι/2r</div>
+        <div onclick="jawaban_salah()" class="option">μοι/4πr</div>
+        <div onclick="jawaban_salah()" class="option">μol2/2r</div>
+
+        <div class="question">Soal 4</div>
+        <div class="question-text">
+          Gaya Lorentz bekerja pada sebuah muatan q yang bergerak dalam medan magnet B. Besar gaya Lorentz diberikan oleh:
+        </div>
+        <div onclick="jawaban_benar()" class="option">qvBsine</div>
+        <div onclick="jawaban_salah()" class="option">qBsine</div>
+        <div onclick="jawaban_salah()" class="option">qVB</div>
+        <div onclick="jawaban_salah()" class="option">qvBcose</div>
+
+        <div class="question">Soal 5</div>
+        <div class="question-text">
+          Jika sebuah bahan bersifat feromagnetik, maka bahan tersebut:
+
+        </div>
+        <div onclick="jawaban_salah()" class="option">Tidak dapat ditarik oleh magnet</div>
+        <div onclick="jawaban_salah()" class="option">Hanya memiliki efek magnet pada suhu tinggi</div>
+        <div onclick="jawaban_benar()" class="option">Memperkuat medan magnet eksternal</div>
+        <div onclick="jawaban_salah()" class="option">Tidak memiliki şifat magnet sama sekali</div>
+    </div>
+
+    <div class="navbar">
+        <a href="/Frame5.html"><i class="fas fa-home"></i>Home</a>
+        <a href="/Frame10.html"><i class="fas fa-book"></i>Library</a>
+        <a href="/Frame9.html"><i class="fas fa-heart"></i>Favorite</a>
+        <a href="/Frame6.html"><i class="fas fa-user"></i>Profile</a>
+    </div>
+
+    <script>
+        function jawaban_benar() {
+            alert("Selamat Jawaban Anda Benar");
+        }
+
+        function jawaban_salah() {
+            alert("Yahh Salah Coba Lagi YAAAA!!!");
+        }
+    </script>
+</body>
+</html>

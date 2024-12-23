@@ -1,0 +1,162 @@
+<html>
+<head>
+    <title>PhysiScope</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #cce0ff, #99c2ff);
+            color: #333;
+        }
+        .container {
+            padding: 20px;
+            text-align: center;
+            padding-bottom: 80px;
+        }
+        .header {
+            background-color: #3399ff;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .section-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .question {
+            background-color: #e6f2ff;
+            padding: 10px;
+            border-radius: 20px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .question-text {
+            background-color: #cc99ff;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .option {
+            background-color: #e6f2ff;
+            padding: 10px;
+            border-radius: 20px;
+            margin-bottom: 10px;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            background-color: #f2f2f2;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            border-top: 1px solid #ccc;
+        }
+        .navbar a {
+            color: #666;
+            text-decoration: none;
+            text-align: center;
+            font-size: 14px;
+        }
+        .navbar a i {
+            display: block;
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+        .top-icons {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+        .top-icons i {
+            font-size: 20px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-icons">
+        <a href="/Frame7.html">
+            <i class="fas fa-arrow-left"></i>
+        </a>
+        
+        <div class="icons">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-bell"></i>
+        </div>
+    </div>
+    <div class="container">
+        <div class="header">
+            <h1>PhysiScope</h1>
+            <p>Menyediakan soal-soal fisika dasar untuk latihan.</p>
+        </div>
+        <div class="section-title">DINAMIKA</div>
+        <div class="question">Soal 1</div>
+        <div class="question-text">
+            Sebuah benda dengan massa 2 kg dikenai gaya 20 N sehingga benda tersebut bergerak. Tentukanlah besar percepatan yang dialami benda tersebut!
+        </div>
+        <div onclick="jawaban_salah()" class="option">15 m/s^2</div>
+        <div onclick="jawaban_salah()" class="option">20 m/s^2</div>
+        <div onclick="jawaban_salah()" class="option">5 m/s^2</div>
+        <div onclick="jawaban_benar()" class="option">10 m/s^2</div>
+
+        <div class="question">Soal 2</div>
+        <div class="question-text">
+          Sebuah balok yang massanya 4 kg ditarik dengan sebuah gaya sehingga bergerak dengan percepatan 2 m/s2. Tentukanlah berapa besarnya gaya yang bekerja pada balok tersebut!
+        </div>
+        <div onclick="jawaban_benar()" class="option">8 N</div>
+        <div onclick="jawaban_salah()" class="option">6 N</div>
+        <div onclick="jawaban_salah()" class="option">2 N</div>
+        <div onclick="jawaban_salah()" class="option">5 N</div>
+
+        <div class="question">Soal 3</div>
+        <div class="question-text">
+          Sebuah benda yang memiliki berat 5 kg diletakkan di atas meja dalam keadaan diam. Berapa gaya normal yang bekerja pada benda tersebut?
+        </div>
+        <div onclick="jawaban_salah()" class="option">40 N</div>
+        <div onclick="jawaban_salah()" class="option">25 N</div>
+        <div onclick="jawaban_salah()" class="option">30 N</div>
+        <div onclick="jawaban_benar()" class="option">50 N</div>
+
+        <div class="question">Soal 4</div>
+        <div class="question-text">
+          Roda bermassa 3 kg dan berjari-jari 20 cm menggelinding di atas bidang miring yang memiliki sudut kemiringan 30. Berapakah percepatan dan percepatan sudut roda tersebut?
+        </div>
+        <div onclick="jawaban_salah()" class="option">10 rad/s^2</div>
+        <div onclick="jawaban_benar()" class="option">20,5 rad/s^2</div>
+        <div onclick="jawaban_salah()" class="option">15 rad/s^2</div>
+        <div onclick="jawaban_salah()" class="option">12,5 /s^2</div>
+
+        <div class="question">Soal 5</div>
+        <div class="question-text">
+          Sebuah silinder pejal bermassa 15 kg menggelinding tanpa tergelincir (slip) dengan kecepatan tetap sebesar 5 m/s. Hitung energi kinetik tersebut.
+        </div>
+        <div onclick="jawaban_salah()" class="option">281 Joule</div>
+        <div onclick="jawaban_benar()" class="option">250 Joule</div>
+        <div onclick="jawaban_salah()" class="option">300 Joule</div>
+        <div onclick="jawaban_salah()" class="option">200 Joule</div>
+    </div>
+    <div class="navbar">
+        <a href="/Frame5.html"><i class="fas fa-home"></i>Home</a>
+        <a href="/Frame10.html"><i class="fas fa-book"></i>Library</a>
+        <a href="/Frame9.html"><i class="fas fa-heart"></i>Favorite</a>
+        <a href="/Frame6.html"><i class="fas fa-user"></i>Profile</a>
+    </div>
+
+    <script>
+        function jawaban_benar() {
+            alert("Selamat Jawaban Anda Benar");
+        }
+
+        function jawaban_salah() {
+            alert("Yahh Salah Coba Lagi YAAAA!!!");
+        }
+    </script>
+</body>
+</html>

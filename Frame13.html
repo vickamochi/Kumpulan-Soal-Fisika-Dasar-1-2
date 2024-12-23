@@ -1,0 +1,163 @@
+<html>
+<head>
+    <title>PhysiScope</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #cce0ff, #99c2ff);
+            color: #333;
+        }
+        .container {
+            padding: 20px;
+            text-align: center;
+            padding-bottom: 80px;
+        }
+        .header {
+            background-color: #3399ff;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .section-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .question {
+            background-color: #e6f2ff;
+            padding: 10px;
+            border-radius: 20px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .question-text {
+            background-color: #cc99ff;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .option {
+            background-color: #e6f2ff;
+            padding: 10px;
+            border-radius: 20px;
+            margin-bottom: 10px;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            background-color: #f2f2f2;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            border-top: 1px solid #ccc;
+        }
+        .navbar a {
+            color: #666;
+            text-decoration: none;
+            text-align: center;
+            font-size: 14px;
+        }
+        .navbar a i {
+            display: block;
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+        .top-icons {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+        .top-icons i {
+            font-size: 20px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-icons">
+        <a href="/Frame7.html">
+            <i class="fas fa-arrow-left"></i>
+        </a>
+        
+        <div class="icons">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-bell"></i>
+        </div>
+    </div>
+    <div class="container">
+        <div class="header">
+            <h1>PhysiScope</h1>
+            <p>Menyediakan soal-soal fisika dasar untuk latihan.</p>
+        </div>
+        <div class="section-title">TERMODINAMIKA</div>
+        <div class="question">Soal 1</div>
+        <div class="question-text">
+            Pada siklus Carnot efisiensi maksimum dapat dicapai jika:
+        </div>
+        <div onclick="jawaban_salah()" class="option">Perbedaan suhu antara reservoir panas dan dingin kecil</div>
+        <div onclick="jawaban_salah()" class="option">Reservoir dingin memiliki suhu sangat rendah</div>
+        <div onclick="jawaban_benar()" class="option">Reservoir panas memiliki suhu sangat tinggi</div>
+        <div onclick="jawaban_salah()" class="option">Proses terjadi pada tekanan konstan</div>
+    
+        <div class="question">Soal 2</div>
+        <div class="question-text">
+            Mesin Carnot beerja antara suhu 500 k. Jika usaha yang dilakukan adalah 200 J. berapakah kalor yang terbuang?
+        </div>
+        <div onclick="jawaban_salah()" class="option">100 J</div>
+        <div onclick="jawaban_salah()" class="option">200 J</div>
+        <div onclick="jawaban_benar()" class="option">300 J</div>
+        <div onclick="jawaban_salah()" class="option">400 J</div>
+
+        <div class="question">Soal 3</div>
+        <div class="question-text">
+            Sebuah gas ideal dengan massa tetap dipanaskan secara isotermal. Pernyataan yang benar adalah?
+        </div>
+        <div onclick="jawaban_salah()" class="option">Energi dalam gas meningkat</div>
+        <div onclick="jawaban_salah()" class="option">Tekanan gas tetap</div>
+        <div onclick="jawaban_salah()" class="option">Kalor yang diberikan sama dengan nol</div>
+        <div onclick="jawaban_benar()" class="option">Usaha dilakukan oleh gas</div>
+
+        <div class="question">Soal 4</div>
+        <div class="question-text">
+          Sebuah mesin Carnot bekerja pada reservoir bersuhu 700 K dan 350 K. Jika kalor yang diserap mesin adalah 2000 J, berapakah kalor yang dibuang?
+        </div>
+        <div onclick="jawaban_salah()" class="option">500 J</div>
+        <div onclick="jawaban_salah()" class="option">700 J</div>
+        <div onclick="jawaban_salah()" class="option">1000 J</div>
+        <div onclick="jawaban_benar()" class="option">1500 J</div>
+
+        <div class="question">Soal 5</div>
+        <div class="question-text">
+            Proses termodinamika yang tidak melibatkan pertukaran kalor dengan lingkungan adalah?
+        </div>
+        <div onclick="jawaban_benar()" class="option">Proses Adiabatik</div>
+        <div onclick="jawaban_salah()" class="option">Proses Isokhorik</div>
+        <div onclick="jawaban_salah()" class="option">Proses Isobarik</div>
+        <div onclick="jawaban_salah()" class="option">Proses Isothermal</div>
+      </div>
+
+    <div class="navbar">
+        <a href="/Frame5.html"><i class="fas fa-home"></i>Home</a>
+        <a href="/Frame10.html"><i class="fas fa-book"></i>Library</a>
+        <a href="/Frame9.html"><i class="fas fa-heart"></i>Favorite</a>
+        <a href="/Frame6.html"><i class="fas fa-user"></i>Profile</a>
+    </div>
+
+    <script>
+        function jawaban_benar() {
+            alert("Selamat Jawaban Anda Benar");
+        }
+
+        function jawaban_salah() {
+            alert("Yahh Salah Coba Lagi YAAAA!!!");
+        }
+    </script>
+</body>
+</html>

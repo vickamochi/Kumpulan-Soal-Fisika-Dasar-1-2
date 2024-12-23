@@ -1,0 +1,193 @@
+<html>
+  <head>
+    <title>Fisika Dasar 1</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+               margin: 0;
+               font-family: Arial, sans-serif;
+               background: linear-gradient(to bottom, #cce0ff, #66a3ff);
+               display: flex;
+               flex-direction: column;
+               align-items: center;
+           }
+           .header {
+               width: 90%;
+               padding: 10px;
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+           }
+           .header .menu-icon, .header .search-icon, .header .notification-icon {
+               font-size: 24px;
+               color: #000;
+           }
+           .header .search-bar {
+               flex-grow: 1;
+               margin: 0 10px;
+               position: relative;
+           }
+           .header .search-bar input {
+               width: 100%;
+               padding: 10px;
+               border-radius: 20px;
+               border: 1px solid #ccc;
+               padding-left: 40px;
+           }
+           .header .search-bar .search-icon {
+               position: absolute;
+               left: 10px;
+               top: 50%;
+               transform: translateY(-50%);
+           }
+           .title {
+               font-size: 24px;
+               margin: 20px 0;
+               color: #000;
+           }
+           .content {
+               display: flex;
+               flex-wrap: wrap;
+               justify-content: center;
+               gap: 20px;
+           }
+           .content .card {
+               background: #fff;
+               border-radius: 10px;
+               box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+               width: 150px;
+               text-align: center;
+               padding: 10px;
+           }
+           .content .card img {
+               width: 100%;
+               border-radius: 10px;
+           }
+           .content .card p {
+               margin: 10px 0 0;
+               font-size: 16px;
+               color: #000;
+           }
+           .content .card .favorite-icon {
+               color: #ccc;
+               font-size: 16px;
+           }
+           .footer {
+               width: 100%;
+               background: #e0e0e0;
+               padding: 10px 0;
+               display: flex;
+               justify-content: space-around;
+               position: fixed;
+               bottom: 0;
+           }
+           .footer .footer-icon {
+               font-size: 24px;
+               color: #888;
+           }
+           .footer .footer-icon.active {
+               color: #000;
+           }
+     </style>
+  </head>
+  <body>
+    <div class="header">
+      <i class="fas fa-bars menu-icon"> </i>
+      <div class="search-bar">
+        <i class="fas fa-search search-icon"> </i>
+        <input placeholder="Search" type="text" />
+      </div>
+      <i class="fas fa-bell notification-icon"> </i>
+    </div>
+    <div class="title">Fisika Dasar 1</div>
+    <div class="content">
+      <div class="card">
+        <a href="/Frame11.html">
+          <img
+          alt="Illustration of kinematics with a hot air balloon and a graph"
+          height="150"
+          src="/image/kinematika.png"
+          width="150"
+        />
+        <p>
+          Kinematika
+        </a>
+          <a href="/Frame9.html">
+            <i class="far fa-heart favorite-icon"> </i>
+          </p>
+          </a>
+          
+      </div>
+
+      <div class="card">
+        <a href="/Frame12.html">
+          <img
+          alt="Illustration of dynamics with a person pushing a box"
+          height="150"
+          src="/image/dinamika.png"
+          width="150"
+        />
+        <p>
+          dinamika
+        </a>
+        
+          <i class="far fa-heart favorite-icon"> </i>
+        </p>
+      </div>
+
+      <div class="card">
+        <a href="/Frame13.html">
+          <img
+          alt="Illustration of thermodynamics with a thermometer"
+          height="150"
+          src="/image/Thermodynamics.png"
+          width="150"
+        />
+        <p>
+          Termodinamika
+        </a>
+        
+        <a href="/Frame9.html">
+          <i class="far fa-heart favorite-icon"> </i>
+        </p>
+        </a>
+          
+      </div>
+    </div>
+    <div class="footer">
+      <div>
+        <a href="/Frame5.html">
+          <i class="fas fa-home footer-icon"></i>
+          <p>Home</p>
+        </a>
+      </div>
+
+      <div>
+        <a href="/Frame10.html">
+          <i class="fas fa-book footer-icon"></i>
+          <p>Library</p>
+        </a>
+      </div>
+      <div>
+        <a href="/Frame7.html">
+            <i class="fas fa-heart footer-icon"> </i>
+        <p>Favorite</p>
+        </a>
+        
+      </div>
+      <div>
+        <a href="/Frame6.html">
+            <i class="fas fa-user footer-icon"> </i>
+            <p>Profile</p>
+        </a>
+        
+      </div>
+      
+      
+    </div>
+  </body>
+</html>

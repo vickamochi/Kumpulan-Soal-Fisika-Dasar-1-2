@@ -1,0 +1,162 @@
+<html>
+<head>
+    <title>PhysiScope</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #cce0ff, #99c2ff);
+            color: #333;
+        }
+        .container {
+            padding: 20px;
+            text-align: center;
+            padding-bottom: 80px;
+        }
+        .header {
+            background-color: #3399ff;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .section-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .question {
+            background-color: #e6f2ff;
+            padding: 10px;
+            border-radius: 20px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .question-text {
+            background-color: #cc99ff;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .option {
+            background-color: #e6f2ff;
+            padding: 10px;
+            border-radius: 20px;
+            margin-bottom: 10px;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            background-color: #f2f2f2;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            border-top: 1px solid #ccc;
+        }
+        .navbar a {
+            color: #666;
+            text-decoration: none;
+            text-align: center;
+            font-size: 14px;
+        }
+        .navbar a i {
+            display: block;
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+        .top-icons {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+        .top-icons i {
+            font-size: 20px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-icons">
+        <a href="/Frame8.html">
+            <i class="fas fa-arrow-left"></i>
+        </a>
+        
+        <div class="icons">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-bell"></i>
+        </div>
+    </div>
+    <div class="container">
+        <div class="header">
+            <h1>PhysiScope</h1>
+            <p>Menyediakan soal-soal fisika dasar untuk latihan.</p>
+        </div>
+        <div class="section-title">GELOMBANG</div>
+        <div class="question">Soal 1</div>
+        <div class="question-text">
+            Dalam fenomena interferensi dua gelombang, jika kedua gelombang memiliki amplitudo yang sama dan berada dalam fase yang berbeda 180", maka:
+        </div>
+        <div onclick="jawaban_salah()" class="option">Gelombang akan saling menguatkan</div>
+        <div onclick="jawaban_benar()" class="option">Gelombang akan saling mengurangi</div>
+        <div onclick="jawaban_salah()" class="option">Gelombang akan saling menguatkan pada beberapa titik dan mengurangi pada titik lain</div>
+        <div onclick="jawaban_salah()" class="option">Gelombang tidak akan berinterferensi</div>
+
+        <div class="question">Soal 2</div>
+        <div class="question-text">
+            Suara dengan frekuensi 1000 Hz merambat di udara pada suhu 20°C.Panjang gelombang suara tersebut adalah
+        </div>
+        <div onclick="jawaban_benar()" class="option">0,34 m</div>
+        <div onclick="jawaban_salah()" class="option">0,20 m</div>
+        <div onclick="jawaban_salah()" class="option">1,7 m</div>
+        <div onclick="jawaban_salah()" class="option">0,1 m</div>
+
+        <div class="question">Soal 3</div>
+        <div class="question-text">
+            Jika dua gelombang yang identik bertemu dalam fase yang berlawanan, maka perubahan yang terjadi adalah:
+        </div>
+        <div onclick="jawaban_benar()" class="option">Interferensi konstruktif</div>
+        <div onclick="jawaban_salah()" class="option">Difraksi</div>
+        <div onclick="jawaban_salah()" class="option">Refleksi total</div>
+        <div onclick="jawaban_salah()" class="option">Interferensi destruktif</div>
+
+        <div class="question">Soal 4</div>
+        <div class="question-text">
+            Gelombang ultrasonik memiliki frekuensi:
+        </div>
+        <div onclick="jawaban_benar()" class="option">Lebih dari 20.000 Hz</div>
+        <div onclick="jawaban_salah()" class="option">Lebih rendah dari 20 Hz</div>
+        <div onclick="jawaban_salah()" class="option">Antara 1 Hz dan 20.000 Hz</div>
+        <div onclick="jawaban_salah()" class="option">0 Hz</div>
+
+        <div class="question">Soal 5</div>
+        <div class="question-text">
+            Sebuah gelombang berjalan memiliki frekuensi 10 Hz dan panjang gelombang 2 meter. Berapakah cepat rambat gelombang tersebut?
+        </div>
+        <div onclick="jawaban_salah()" class="option">5 m/s</div>
+        <div onclick="jawaban_salah()" class="option">10 m/s</div>
+        <div onclick="jawaban_benar()" class="option">20 m/s</div>
+        <div onclick="jawaban_salah()" class="option">40 m/s</div>
+    </div>
+    <div class="navbar">
+        <a href="/Frame5.html"><i class="fas fa-home"></i>Home</a>
+        <a href="/Frame10.html"><i class="fas fa-book"></i>Library</a>
+        <a href="/Frame9.html"><i class="fas fa-heart"></i>Favorite</a>
+        <a href="/Frame6.html"><i class="fas fa-user"></i>Profile</a>
+    </div>
+
+    <script>
+        function jawaban_benar() {
+            alert("Selamat Jawaban Anda Benar");
+        }
+
+        function jawaban_salah() {
+            alert("Yahh Salah Coba Lagi YAAAA!!!");
+        }
+    </script>
+</body>
+</html>
